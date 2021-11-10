@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+
+    <class name="model.MovieEntity" table="movies">
+        <id name="imdb_id" column="imdb_id"/>
+        <property name="title" column="title"/>
+        <property name="year" column="year"/>
+        <property name="plot" column="plot"/>
+        <property name="poster_url" column="poster_url"/>
+        <property name="award_wins" column="award_wins"/>
+        <property name="award_nominations" column="award_nominations"/>
+        <property name="tomato_meter" column="tomato_meter"/>
+    </class>
+</hibernate-mapping>
